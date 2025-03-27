@@ -2,13 +2,13 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
+
 const app = express()
 require('dotenv').config();
 
 const port = process.env.PORT;
 
 app.use(bodyParser.json());
-
 
 
 const mongoURI = process.env.MONGO_URI;
