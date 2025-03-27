@@ -50,7 +50,7 @@ app.post("/submit", async (req, res) => {
     try {
         const collection = db.collection("messages");
         await collection.insertOne({ username, email, message });
-        res.status(200).json({ success: true, message: "Message received successfully!" });
+        res.status(200).json({ success: true, message: "Your message has been sent successfully!" });
     } catch (error) {
         res.status(500).json({ success: false, error: error.message });
     }
