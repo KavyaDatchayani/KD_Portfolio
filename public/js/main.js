@@ -76,4 +76,34 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("closeBtn").addEventListener("click", function () {
         document.getElementById("popup").classList.remove("show");
     });
+
+
+
+    // active nav link
+
+    const section = document.querySelectorAll('section');
+
+
+    function toggleactiveclass() {
+        let scrollYmoment = window.scrollY;
+
+        section.forEach((section) => {
+            const sectionTop = section.offsetTop - 50;
+            const sectionHeight = section.clientHeight;
+            const sectionId = section.getAttribute('id');
+
+            if (scrollYmoment >= sectionTop && scrollYmoment < sectionTop + sectionHeight) {
+                navlinka.forEach((link) => {
+                    link.classList.remove("active");
+                });
+                document.querySelector(`.navlinks a[href="#${sectionId}"]`).classList.add("active");
+            }
+        });
+    }
+    window.addEventListener("scroll", toggleactiveclass);
+
+
+
+
+
 });

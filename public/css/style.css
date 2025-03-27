@@ -62,7 +62,13 @@ body {
   color: #1d1d1d;
   border: none;
 }
-
+#navbar .navlinks a.active {
+  box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.2),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.4);
+  background-color: #fffafa;
+  color: #1d1d1d;
+  border: none;
+}
 #navbar .logo {
   padding-left: 7rem;
 }
@@ -314,8 +320,8 @@ hr {
 .project1 .imgs img,
 .project2 .imgs img,
 .project3 .imgs img {
-  width: 300px;
-  height: 180px;
+  width: 280px;
+  height: 150px;
   object-fit: contain;
   transition: transform 0.3s ease-in-out;
 }
@@ -359,6 +365,13 @@ hr {
   color: #262626;
   padding: 5px 10px;
   border-radius: 12px;
+  box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.2),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.4);
+  transition: all 0.5s ease;
+}
+.aboutproject span:hover {
+  background-color: transparent;
+  color: #c8facc;
 }
 /* Contact ----------------------------------- */
 
