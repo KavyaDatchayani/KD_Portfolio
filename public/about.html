@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jersey+20&family=Notable&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    html,
+    body {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", serif;
+    }
+    #about {
+      background-color: #252525;
+    }
+    #about a {
+      text-decoration: none;
+    }
+    #goback {
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+    }
+    #goback a button.gobackbtn {
+      border: 1px solid #252525;
+      padding: 6px 20px;
+      margin: 20px;
+      transition: all 1s ease;
+      font-size: 18px;
+      letter-spacing: 2px;
+      box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.2),
+        inset 3px 3px 6px rgba(255, 255, 255, 0.4);
+      border: none;
+    }
+    #goback a button.gobackbtn:hover {
+      background-color: #252525;
+      color: #fafaff;
+      border: 1px solid #fafaff;
+    }
+    #about .title {
+      width: 300px;
+      margin: 0 auto;
+      padding: 15px;
+      text-align: center;
+    }
+    #about .title h1 {
+      margin-top: 10px;
+      color: #252525;
+      font-size: 25px;
+      font-weight: 900;
+      font-family: "Notable", serif;
+      letter-spacing: 3px;
+      padding: 10px;
+      background-color: #fff2b2;
+    }
+    .image {
+      width: 170px;
+      margin: 0 auto;
+    }
+    .image img {
+      width: 150px;
+      height: 150px;
+    }
+    .aboutmepoints {
+      margin: 0 auto;
+      padding: 25px;
+      width: 80%;
+      line-height: 2rem;
+    }
+    ul {
+      list-style-type: disc;
+      padding: 16px;
+    }
+    ul li {
+      color: #fafaff;
+      font-family: "Caveat", serif;
+      font-size: 23px;
+    }
+    @media only screen and (max-width: 578.98px) and (max-width: 991.98px) {
+      .aboutmepoints {
+        width: 100%;
+      }
+      #goback a button.gobackbtn {
+        font-size: 14px;
+      }
+    }
+  </style>
+  <body>
+    <div id="about">
+      <div class="title"><h1>About Me</h1></div>
+      <div class="image">
+        <img src="images/abouticon.png" alt="icon" />
+      </div>
+      <div class="aboutmepoints">
+        <ul>
+          <li>Hi, I'm Kavya Datchayani, a passionate Full-Stack Developer.</li>
+          <li>
+            Started my journey in January 2023. Learned HTML, CSS, Bootstrap,
+            JavaScript, Node.js, React.js, Express.js, MongoDB, and more.
+          </li>
+          <li>
+            Completed an online Full-Stack course by Angela Yu, but realized
+            just following instructions wasn’t enough.
+          </li>
+          <li>
+            Joined an offline Full-Stack Developer course at Besant Technologies
+            and successfully completed it.
+          </li>
+          <li>
+            Initially struggled with errors and confusion, but working on real
+            projects helped me improve.
+          </li>
+          <li>
+            Key lesson: Learning is not just about completing a course—it’s
+            about solving errors and building projects.
+          </li>
+          <li>
+            Now, I can find solutions on my own—and that’s the key to becoming a
+            Full-Stack Developer.
+          </li>
+          <li>
+            Advice: Be patient, stay consistent, code daily, and never give up!
+            🚀
+          </li>
+        </ul>
+      </div>
+      <div id="goback">
+        <a href="index.html"
+          ><button class="gobackbtn">
+            <i class="fa-solid fa-arrow-left"></i> Go Back
+          </button></a
+        >
+      </div>
+      <footer>
+        <h3>&copy; Made By @KavyaDatchayani 💕</h3>
+      </footer>
+    </div>
+  </body>
+  <script></script>
+</html>
